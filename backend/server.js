@@ -3,6 +3,7 @@ const connectDB = require('./config/db');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const path = require('path');
 dotenv.config();
 const app = express();
 
@@ -16,7 +17,8 @@ app.use(cors({
 
 // Init Middleware
 app.use(bodyParser.json());
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use(express.static(path.join(__dirname, "build")));
 
 // Define Routes
 app.use('/api/auth', require('./routes/auth'));

@@ -1,3 +1,7 @@
+/**
+ * The function `AppContent` renders a responsive navigation bar with login, register, profile, resume upload, and logout functionality based on user authentication status.
+ * @returns The code snippet is a React application that defines a functional component `AppContent` and exports a default function `App`.
+ */
 import { AppBar, Button, IconButton, Toolbar, Typography, useMediaQuery } from '@mui/material';
 import React, { useEffect, useState } from "react";
 import {
@@ -28,6 +32,9 @@ function AppContent() {
     navigate('/login');
   };
 
+  /**
+   * The function `renderNavButtons` conditionally renders navigation buttons based on the user's login status.
+   */
   const renderNavButtons = () => (
     <>
       {!isLoggedIn && (

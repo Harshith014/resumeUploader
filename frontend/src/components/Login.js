@@ -1,3 +1,8 @@
+/**
+ * The `Login` component is a React functional component that handles user login functionality, including form inputs for email and password, error handling, and navigation upon successful login.
+ * @returns The `Login` component is being returned. It contains a form for user login with email and password fields, a login button, a "Forgot password?" link, and an error message display area. The component handles form submission, makes a POST request to a login endpoint, and updates the UI based on the response received.
+ */
+/* The line `import { Button, Container, Grid, Link, TextField, Typography } from '@mui/material';` is importing specific components from the Material-UI library. These components are then used within the `Login` component to create the user interface for the login form. */
 import { Button, Container, Grid, Link, TextField, Typography } from '@mui/material';
 import axios from 'axios';
 import React, { useState } from 'react';

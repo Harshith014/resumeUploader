@@ -1,3 +1,7 @@
+/**
+ * The Register component in this code snippet handles user registration by sending form data to a server endpoint and displaying registration messages.
+ * @returns The `Register` component is being returned. It is a functional component in React that contains a form for user registration. The component includes input fields for name, email, and password, a registration button, and a link to redirect to the login page if the user already has an account. The component also handles form submission, error messages, and responsive design for different screen sizes.
+ */
 import { Box, Button, Container, Link, TextField, Typography } from '@mui/material';
 import axios from 'axios';
 import React, { useState } from 'react';
@@ -16,6 +20,10 @@ const Register = () => {
 
     const onChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
+/**
+ * The onSubmit function is an asynchronous function that handles form submission for user registration, sending a POST request to the specified URI and displaying a success message or error message accordingly.
+ * @param e - The `e` parameter in the `onSubmit` function is an event object that represents the event triggered by the form submission. In this case, it is used to prevent the default form submission behavior using `e.preventDefault()`. This is a common practice in form submission handling in React to prevent the
+ */
     const onSubmit = async (e) => {
         e.preventDefault();
 

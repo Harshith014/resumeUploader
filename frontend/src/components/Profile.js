@@ -1,3 +1,7 @@
+/**
+ * The UserProfile component in React manages user profile data including name, email, and profile image with the ability to update and display the information.
+ * @returns The `UserProfile` component is being returned. It is a functional component in React that displays a user profile form where users can update their name, email, and profile image. The component includes form fields for name, email, and profile image upload, along with a preview of the selected image. Upon submission of the form, the user's profile information is updated via an API call using Axios. The
+ */
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
@@ -13,6 +17,7 @@ const UserProfile = () => {
     const [message, setMessage] = useState(null);
     const { name, email, profileImagePreview, selectedImagePreview } = userData;
 
+/* The `useEffect` hook in the `UserProfile` component is responsible for fetching the user data when the component mounts for the first time. Here's a breakdown of what the `useEffect` block is doing: */
     useEffect(() => {
         const fetchUserData = async () => {
             try {

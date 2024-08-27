@@ -1,3 +1,4 @@
+/* This JavaScript code snippet is defining a function named `connectDB` that connects to a MongoDB database using Mongoose, a popular MongoDB object modeling tool for Node.js. Here's a breakdown of what the code does: */
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

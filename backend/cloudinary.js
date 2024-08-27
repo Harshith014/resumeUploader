@@ -1,3 +1,4 @@
+/* This code snippet is setting up the Cloudinary configuration in a Node.js environment. Here's what each part does: */
 const cloudinary = require('cloudinary').v2;
 
 cloudinary.config({

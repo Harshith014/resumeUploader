@@ -1,3 +1,7 @@
+/**
+ * The `ResumeUploader` component in React allows users to upload a resume file, preview it, and submit it via a form with error handling.
+ * @returns The `ResumeUploader` component is being returned. It consists of a form for uploading a resume file, displaying a preview of the uploaded resume (if available), and showing a message indicating the upload status. The component includes form elements, event handlers for file selection and form submission, and styling for responsive display of the resume preview.
+ */
 import { Button, Container, Grid, Typography } from '@mui/material';
 import axios from 'axios';
 import React, { useState } from 'react';

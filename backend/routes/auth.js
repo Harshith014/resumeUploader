@@ -1,3 +1,4 @@
+/* This JavaScript code snippet is setting up routes for user authentication using Express.js. Here's a breakdown of what the code is doing: */
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');

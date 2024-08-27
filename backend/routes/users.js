@@ -1,3 +1,4 @@
+/* This JavaScript code is setting up a Node.js Express router that handles routes related to user authentication and profile management. Here's a breakdown of what the code is doing: */
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const auth = require('../middlware/auth');

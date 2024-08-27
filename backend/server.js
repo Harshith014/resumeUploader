@@ -1,3 +1,4 @@
+/* This JavaScript code snippet is setting up a basic Express server for a web application. Here's a breakdown of what each part of the code is doing: */
 const express = require('express');
 const connectDB = require('./config/db');
 const bodyParser = require('body-parser');
